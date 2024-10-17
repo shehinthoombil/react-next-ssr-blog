@@ -1,6 +1,13 @@
 
+async function fetchBlogs(){
+  const res = await fetch('http://localhost:5000/blogs')
+  return res.json();
+}
 
 export default function Home() {
+  //fectch blog data and render in server SSR
+  const blogs =  fetchBlogs();
+
   return (
     <div>
       <h1>Blog Lists</h1>

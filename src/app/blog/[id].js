@@ -7,9 +7,9 @@ export default async function BlogDetails({ params }) {
 
 return(
     <div>
-        <h1>title</h1>
-        <img src ="" alt="blog title" />
-        <p>blog.content</p>
+         <h1>{blog.title}</h1>
+         <img src={blog.image} alt={blog.title} />
+        <p>{blog.content}</p>
     </div>
 )
 }

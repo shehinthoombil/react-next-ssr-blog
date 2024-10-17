@@ -5,11 +5,11 @@ async function fetchBlog(id) {
 export default async function BlogDetails({ params }) {
     const blog = await fetchBlog(params.id)
 
-return(
-    <div>
-         <h1>{blog.title}</h1>
-         <img src={blog.image} alt={blog.title} />
-        <p>{blog.content}</p>
-    </div>
-)
+    return (
+        <div>
+            <h1>{blog.title}</h1>
+            <img src={blog.image} alt={blog.title} />
+            <p>{blog.content}</p>
+        </div>
+    )
 }

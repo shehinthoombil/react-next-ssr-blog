@@ -20,7 +20,36 @@ const blogs = [
         image: "https://example.com/financial-ratios.jpg",
         excerpt: "The financial statement used for obtaining swift integration...",
         content: "Full content for 10 financial ratios for business."
-    }
+    },
+    {
+        id: 3,
+        title: "10 Financial Ratios for Business",
+        image: "https://example.com/financial-ratios.jpg",
+        excerpt: "The financial statement used for obtaining swift integration...",
+        content: "Full content for 10 financial ratios for business."
+    },
+    {
+        id: 4,
+        title: "10 Financial Ratios for Business",
+        image: "https://example.com/financial-ratios.jpg",
+        excerpt: "The financial statement used for obtaining swift integration...",
+        content: "Full content for 10 financial ratios for business."
+    },
+    {
+        id: 5,
+        title: "10 Financial Ratios for Business",
+        image: "https://example.com/financial-ratios.jpg",
+        excerpt: "The financial statement used for obtaining swift integration...",
+        content: "Full content for 10 financial ratios for business."
+    },
+    {
+        id: 6,
+        title: "10 Financial Ratios for Business",
+        image: "https://example.com/financial-ratios.jpg",
+        excerpt: "The financial statement used for obtaining swift integration...",
+        content: "Full content for 10 financial ratios for business."
+    },
+
 ]
 
 app.get('/blogs', (req, res) => {

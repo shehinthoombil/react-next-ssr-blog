@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 
 export default function BlogDetails({ params }) {
-
     const [product, setProduct] = useState({
         id: '',
         title: "",
@@ -31,7 +30,12 @@ export default function BlogDetails({ params }) {
         <div className="container mx-auto p-6">
             <h1 className="text-3xl font-semibold mb-4">{product.title}</h1>
             <p className="text-gray-600 mt-2">{product.excerpt}</p>
-            <h2 className="text-gray-600 mt-2">{product.content}</h2>
+            {/* <h2 className="text-gray-600 mt-2">{product.content}</h2> */}
+
+            <div className="mt-6">
+                <h2 className="text-xl font-semibold mb-2">Full Content:</h2>
+                <p className="text-gray-800">{product.content}</p>
+            </div>
         </div>
     );
 }

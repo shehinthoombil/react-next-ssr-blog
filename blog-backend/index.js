@@ -4,12 +4,13 @@ const { data } = require('autoprefixer');
 
 const app = express()
 const PORT = 5000;
-//allow cross-origin requests from the Next.js frontend
 
+//allow cross-origin requests from the Next.js frontend
 app.use(cors({
     credentials: true,
     origin: 'http://localhost:3000' // Enclose the URL in quotes and ensure 'http://' is correct
 }));
+
 const blogs = [
     {
         id: 1,
@@ -57,7 +58,6 @@ const blogs = [
 ]
 
 app.use(express.static('public'));
-
 
 app.get('/blogs', (req, res) => {
     res.json(blogs)
